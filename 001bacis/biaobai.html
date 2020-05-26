@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>给你的诗歌</title>
+    <style type="text/css">
+        body{
+            background-image: url("./images/1.jpg");
+            background-size: 100% 100%;
+            height: 100%;
+        }
+        html{
+            height: 100%;
+        }
+        @keyframes myfirst {
+            0%{opacity: 0}
+            50% {opacity: 100}
+            75% {opacity: 0}
+            100% {opacity: 0}
+        }
+        @keyframes mysecond {
+            0%{opacity: 0}
+            50% {opacity: 0}
+            75% {opacity: 100}
+            100% {opacity: 0}
+         }
+        p{
+            font-size: 200px;
+            position: absolute;
+            width:100%;
+            text-align: center;
+        }
+        #xiuer{
+            animation: myfirst 2s infinite;
+        }
+        #niubi{
+            animation: mysecond 2s infinite;
+        }
+    </style>
+</head>
+<body>
+<audio src="./mp3/1.mp3"  autoplay="autoplay" loop="loop"></audio>
+<p id="xiuer">秀儿</p>
+<p id="niubi">牛逼</p>
+</body>
+</html>

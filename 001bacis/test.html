@@ -12,10 +12,17 @@
         html{
             height: 100%;
         }
+        @keyframes myfirst {
+            from {opacity: 0}
+            to {opacity: 100}
+        }
+        h1,p{
+            animation: myfirst 1s infinite;
+        }
     </style>
 </head>
 <body>
-
+<audio src="./mp3/1.mp3" controls="controls" autoplay="autoplay"></audio>
 <h1>静夜思</h1>
 <p>床前明月光,</p>
 <p>疑是地上霜.</p>

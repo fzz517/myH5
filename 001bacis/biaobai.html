@@ -2,45 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>给你的诗歌</title>
+    <title>秀儿牛逼</title>
     <style type="text/css">
         body{
-            background-image: url("./images/1.jpg");
+            background-image: url("./images/0.jpg");
             background-size: 100% 100%;
             height: 100%;
         }
         html{
             height: 100%;
         }
+        #x{
+            animation: myfirst 6s infinite;
+            background-color: lightgreen;
+        }
+        #e{
+            animation: mysecond 6s infinite;
+            background-color: red;
+        }
+        #n{
+            animation: mythird 6s infinite;
+        }
+        #b{
+            animation: myfouth 6s infinite;
+            background-color: black;
+            color: white;
+        }
         @keyframes myfirst {
             0%{opacity: 0}
-            50% {opacity: 100}
-            75% {opacity: 0}
+            20% {opacity: 100}
+            40% {opacity: 0}
             100% {opacity: 0}
         }
         @keyframes mysecond {
             0%{opacity: 0}
-            50% {opacity: 0}
-            75% {opacity: 100}
+            20%{opacity: 0}
+            40% {opacity: 100}
+            60% {opacity: 0}
             100% {opacity: 0}
          }
+        @keyframes mythird {
+            0%{opacity: 0}
+            40% {opacity: 0}
+            60% {opacity: 100}
+            80%{opacity: 0}
+            100% {opacity: 0}
+        }
+        @keyframes myfouth {
+            0%{opacity: 0}
+            40% {opacity: 0}
+            60% {opacity: 0}
+            80%{opacity: 100}
+            100% {opacity: 0}
+        }
         p{
             font-size: 200px;
             position: absolute;
-            width:100%;
-            text-align: center;
-        }
-        #xiuer{
-            animation: myfirst 2s infinite;
-        }
-        #niubi{
-            animation: mysecond 2s infinite;
         }
     </style>
 </head>
 <body>
-<audio src="./mp3/1.mp3"  autoplay="autoplay" loop="loop"></audio>
-<p id="xiuer">秀儿</p>
-<p id="niubi">牛逼</p>
+<p id="x">秀</p>
+<p id="e">儿</p>
+<p id="n">牛</p>
+<p id="b">逼</p>
 </body>
 </html>
